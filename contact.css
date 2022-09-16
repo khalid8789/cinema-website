@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:ital,wght@0,100;0,400;1,100&family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+    margin-top: 0;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+body{
+    background-color:#070111;
+    width: 100%;
+    min-height: 100vh;
+}
+.side-bar{
+    display: none;
+}
+.header2{
+    display: none;
+}
+.container{
+    position: relative;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070111;
+}
+header{
+    z-index: 999;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+span{
+    color: red;
+    
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    gap: 30px;
+    width: 100%;
+    text-align: center;
+    animation: container;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes container{
+    0%{left: -1000px;}
+    100%{left: 0px;}
+   
+}
+.you{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5vh;
+    outline: none;
+    width: 80%;
+    
+}
+.add{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background-color:#fff;
+    color: #1a1a1a;
+    font-size: 15px;
+    border: none;
+}
+.cribe{
+    width: 10%;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+
+footer{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.svglast{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    top: 70px;
+    
+}
+.svg{
+    width: 20px;
+    cursor: pointer;
+
+}
+.net{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.flix{
+    color: gray;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+@media only screen and (max-width:1024px){
+    .inp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 5vh;
+        outline: none;
+        width: 90%;
+        
+    }
+    .add{
+        width: 60%;
+        padding: 10px;
+        border: none;
+        background-color:#fff;
+        color: #1a1a1a;
+        font-size: 15px;
+        border: none;
+    }
+    .cribe{
+        width: 20%;
+        padding: 10px;
+        background-color: red;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .side-bar{
+        display: none;
+    }
+    .header2{
+        display: none;
+    }
+    header{
+        padding: 40px 5px;
+
+    }
+    .contact{
+        width: 100%;
+    }
+    .inp{
+        width: 90%;
+    }
+    .you{
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .foryou{
+        width: 90%;
+    }
+    .inp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 5vh;
+        outline: none;
+        width: 90%;
+        
+    }
+    .add{
+        width: 60%;
+        padding: 10px;
+        border: none;
+        background-color:#fff;
+        color: #1a1a1a;
+        font-size: 15px;
+        border: none;
+    }
+    .cribe{
+        width: 20%;
+        padding: 10px;
+        background-color: red;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+    }
+}
+@media only screen and (max-width:480px){
+    header{
+        display: none;
+    }
+    .header2{
+        z-index: 999;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    a{ 
+        
+        text-decoration: none;
+        color: #fff;
+    }
+    span{
+        color: red;
+        
+    }
+    .netscreen{
+        font-size: 15px;
+    }
+    .hamburger{
+        position: relative;
+        z-index: 999;
+        border: none;
+        width: 15vw;
+        color: #fff;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+        color: #fff;
+        background-color: white;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+     opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+       }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg)
+       }
+       .side-bar{
+        display: table-cell;
+        vertical-align: middle;
+        right:-250px;
+        position:fixed;
+        z-index: 1001;
+       top: 40px;
+        flex-direction: column;
+        background-color:black;
+        color: #fff;
+        height: 50vh;
+        gap: 0;
+        width: 50%;
+    transition: 0.9s ease;
+        
+    }
+    .side-bar.active{
+        right: 0px;
+    }
+    .side-bar.act{
+        display: none;
+        background-color: #1a1a1a;
+    }
+    .side-bar .item{
+        text-decoration: none;
+        background-color: black;
+        color: #fff;
+        display: block;
+        font-size: 15px;
+        line-height: 13px;
+        text-align: center;
+       padding: 14px 16px;
+        width: 100%;
+       cursor: pointer;
+       font-family: 'Roboto', sans-serif;
+    }
+    .contact{
+        width: 100%;
+    }
+    
+    .you{
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .foryou{
+        width: 90%;
+    }
+    .inp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 5vh;
+        outline: none;
+        width: 90%;
+        
+    }
+    .add{
+        width: 60%;
+        padding: 10px;
+        border: none;
+        background-color:#fff;
+        color: #1a1a1a;
+        font-size: 15px;
+        border: none;
+    }
+    .cribe{
+        width: 20%;
+        padding: 10px;
+        background-color: red;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+    }
+    
+    
+}

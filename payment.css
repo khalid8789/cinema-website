@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:ital,wght@0,100;0,400;1,100&family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+    margin-top: 0;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+body{
+    background-color:#989AA0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.side-bar{
+    display: none;
+}
+.header2{
+    display: none;
+}
+.container{
+    position: relative;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #989AA0;
+}
+header{
+    z-index: 999;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+span{
+    color: red;
+    
+}
+
+
+.pay{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.form{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center;
+    align-items: center; */
+
+    width: 50%;
+    gap: 20px;
+    padding: 20px 40px;
+    margin-bottom:10px ;
+    padding-bottom:20px;
+    
+}
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 13.5px;
+    font-weight: 700;
+}
+input{
+    display: block;
+    border: 2px solid #f0f0f0;
+    outline: #f0f0f0;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12.5px;
+    padding: 7px;
+    font-family: inherit;
+}
+.end{
+    padding: 20px 10px;
+}
+p{
+    font-size: 13.5px;
+    font-weight: 550;
+}
+.forbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
+button{
+    width: 30%;
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+footer{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.svglast{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    top: 100px;
+    
+}
+.svg{
+    width: 20px;
+    cursor: pointer;
+
+}
+.net{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.flix{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width:768px){
+    .side-bar{
+        display: none;
+    }
+    .header2{
+        display: none;
+    }
+    header{
+        padding: 40px 5px;
+
+    }
+    
+    button{
+        width: 50%;
+        padding: 5px;
+        background-color: red;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    .svg{
+        width: 20px;
+    
+    }
+    
+    .flix{
+        color: gray;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    header{
+        display: none;
+    }
+    .header2{
+        z-index: 999;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    a{ 
+        
+        text-decoration: none;
+        color: #fff;
+    }
+    span{
+        color: red;
+        
+    }
+    .netscreen{
+        font-size: 15px;
+    }
+    .hamburger{
+        position: relative;
+        z-index: 999;
+        border: none;
+        width: 15vw;
+        color: #fff;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+        color: #fff;
+        background-color: white;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+     opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+       }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg)
+       }
+       .side-bar{
+        display: table-cell;
+        vertical-align: middle;
+        right:-250px;
+        position:fixed;
+        z-index: 1001;
+       top: 40px;
+        flex-direction: column;
+        background-color:#989AA0;
+        color: #fff;
+        height: 50vh;
+        gap: 0;
+        width: 50%;
+    transition: 0.9s ease;
+        
+    }
+    .side-bar.active{
+        right: 0px;
+    }
+    .side-bar.act{
+        display: none;
+        background-color: #1a1a1a;
+    }
+    .side-bar .item{
+        text-decoration: none;
+        background-color: #989AA0;
+        color: #fff;
+        display: block;
+        font-size: 15px;
+        line-height: 13px;
+        text-align: center;
+       padding: 14px 16px;
+        width: 100%;
+       cursor: pointer;
+       font-family: 'Roboto', sans-serif;
+    }
+    .form{
+        position: relative;
+        top: 80px;
+        width: 80%;
+        gap: 20px;
+        padding: 20px 40px;
+        margin-bottom:0px ;
+        padding-bottom:0px;
+    }
+    label{
+        font-size:14.5px;
+    }
+    input{
+        font-size: 12.5px;
+    }
+    button{
+        width: 50%;
+  position: relative;
+  top: -13px;
+    }
+    p{
+        font-size: 14.5px;
+    }
+    .svg{
+        width: 20px;
+    
+    }
+    .flix{
+        color: #fff;
+        font-size: 15px;
+        font-weight: 550;
+        line-height: 30px;
+    }
+    .svglast{
+        position: relative;
+        top: 0px;
+    }
+    .net{
+        position: relative;
+        top: 0px;
+    }
+    .head{
+        z-index: 999;
+        color: #fff;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        gap: 10px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+}

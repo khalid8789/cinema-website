@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:ital,wght@0,100;0,400;1,100&family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+    margin-top: 0;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+body{
+    background-color: #070111;
+    width: 100vw;
+    min-height: 100vh;
+}
+.watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+h2{
+    font-size: 19px;
+    color: #fff;
+    border-bottom: 3px solid red;
+}
+video{
+    /* position: absolute;
+    top: 20%;
+    left: 25%; */
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+   border-radius: 10px;  
+}
+.army{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+#playbtn{
+    width: 40px;
+    height: 100px;
+    z-index: 1000;
+    cursor: pointer;
+    color: #fff;
+
+    
+}
+.forsvg{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+#pausebtn{
+    width: 40px;
+    height: 100px;
+    z-index: 1000;
+    cursor: pointer;
+    color: #fff;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+p{
+    color: grey;
+    font-size: 17px;
+    font-weight: 500;
+}
+.span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+span{
+    color: grey;
+    font-size: 15px;
+    font-weight: 500;
+}
+#clock{
+    color: red;
+    width: 20px;
+}
+.star{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ top: 10px;
+}
+#svg{
+    color: red;
+    width: 20px;
+}
+button{
+    position: relative;
+    top: 30px;
+    padding: 10px;
+    width: 15%;
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-style: 18px;
+}
+.lastly{
+    position: relative;
+    top: 120px;
+    left: 150px;
+    padding: 10px;
+    width: 15%;
+    background-color:black;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+#arrow{
+    width: 30px;
+}
+@media only screen and (max-width:1024px){
+ video{
+    width: 80%;
+ }
+ .lastly{
+    width: 50%;
+ }
+}
+@media only screen and (max-width:768px){
+video{
+    width: 80%;
+}
+button{
+    position: relative;
+    top: 30px;
+    padding: 10px;
+    width: 30%;
+}
+a{
+   
+    font-style: 15px;
+}
+.lastly{
+    position: relative;
+    top: 120px;
+    left: 50px;
+    padding: 10px;
+    width: 45%;
+}
+#arrow{
+    width: 20px;
+}
+}
+
+@media only screen and (max-width:480px){
+h2{
+    font-size: 15px;
+}
+video{
+    width: 80%;
+}
+button{
+    position: relative;
+    top: 30px;
+    padding: 10px;
+    width: 40%;
+}
+a{
+   
+    font-style: 15px;
+}
+.lastly{
+    position: relative;
+    top: 120px;
+    left: 50px;
+    padding: 10px;
+    width: 45%;
+}
+#arrow{
+    width: 20px;
+}
+}

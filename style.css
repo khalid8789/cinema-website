@@ -11,7 +11,7 @@
 
 body{
     background-color: #111;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 }
 .container{
@@ -69,21 +69,40 @@ span{
     display: none;
 }
 #playbtn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
+    width: 40px;
     height: 100px;
     z-index: 1000;
+    cursor: pointer;
+    color: #fff;
+
     
+}
+.forsvg{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 105%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+   
+}
+#pausebtn{
+    
+    width: 40px;
+    height: 100px;
+    z-index: 1000;
+    cursor: pointer;
+    color: #fff;
 }
 .top{
     display: flex;
     /* justify-content: center;
     align-items: center; */
     position: relative;
-    top: 20px;
+    top: 50px;
     left: 20px;
 }
 .top h3{
@@ -97,7 +116,7 @@ span{
     margin: 10px 0;
     width: 100%;
     position: relative;
-    top: 35px;
+    top: 55px;
    
 }
 .progress{
@@ -284,7 +303,7 @@ footer{
 }
 
 .slider{
-    width: 50%;
+    width: 60%;
     height: auto;
     border-radius: 10px;
     overflow: hidden;
@@ -561,7 +580,18 @@ footer{
         width: 60%;
         height: 100%;
     }
+    .forsvg{
+        position: absolute;
+        top: 90%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+    /* .forsvg{
+        position: relative;
+        top: 450px;
+    } */
 }
+
 
 
 
@@ -626,7 +656,7 @@ footer{
        .side-bar{
         display: table-cell;
         vertical-align: middle;
-        right:-190px;
+        right:-250px;
         position:fixed;
         z-index: 1001;
        top: 40px;
@@ -787,6 +817,25 @@ footer{
         width: 100%;
         height: 100%;
     }
+    .slider{
+        width: 80%;
     }
+}
+
+.forsvg{
+    position: absolute;
+    top: 99%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+#playbtn{
+    width: 30px;
+}
+#pausebtn{
+    width: 30px;
+  
+}
+}
     
 

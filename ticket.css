@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:ital,wght@0,100;0,400;1,100&family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+    margin-top: 0;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+body{
+    background-color: #111;
+    width: 100%;
+    min-height: 100vh;
+}
+.side-bar{
+    display: none;
+}
+.header2{
+    display: none;
+}
+.container{
+    position: relative;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+}
+header{
+    z-index: 999;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+span{
+    color: red;
+    
+}
+.overall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+}
+.wrapper{
+   
+    width: 50%;
+    height: 80vh;
+    background-color:#fff;
+    color: black;
+   border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.info{
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.book{
+    color: red;
+    font-size: 25px;
+}
+form{
+    display: block;
+    margin: auto;
+}
+select{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    margin: 8px;
+    font-size: 15px;
+}
+.forbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
+button{
+    width: 30%;
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+footer{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.svglast{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    top: 100px;
+    
+}
+.svg{
+    width: 20px;
+    cursor: pointer;
+
+}
+.net{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.flix{
+    color: gray;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media only screen and (max-width:1024px){
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.overall{
+    width: 100%;
+}
+select{
+    width: 80%;
+}
+.forbutton{
+    width: 100%;
+}
+button{
+    width: 50%;
+    padding: 5px;
+}
+p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.net{
+    position: relative;
+    top: 100px;
+}
+header{
+    padding: 10px 90px; 
+}
+}
+@media only screen and (max-width:768px){
+    .side-bar{
+        display: none;
+    }
+    .header2{
+        display: none;
+    }
+    header{
+        padding: 20px 5px;
+
+    }
+    .overall{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+       width: 80%;
+        height: 100vh;
+       
+    }
+    .info{
+        width: 100%;
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .book{
+        font-size: 17px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    select{
+        width: 80%;
+    }
+    .forbutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        top: 5px;
+    }
+    button{
+        width: 50%;
+        padding: 5px;
+        background-color: red;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+    }
+    .svg{
+        width: 20px;
+    
+    }
+    
+    .flix{
+        color: gray;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    header{
+        display: none;
+    }
+    .header2{
+        z-index: 999;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    a{ 
+        
+        text-decoration: none;
+        color: #fff;
+    }
+    span{
+        color: red;
+        
+    }
+    .netscreen{
+        font-size: 15px;
+    }
+    .hamburger{
+        position: relative;
+        z-index: 999;
+        border: none;
+        width: 15vw;
+        color: #fff;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+        color: #fff;
+        background-color: white;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+     opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+       }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg)
+       }
+       .side-bar{
+        display: table-cell;
+        vertical-align: middle;
+        right:-250px;
+        position:fixed;
+        z-index: 1001;
+       top: 40px;
+        flex-direction: column;
+        background-color: #111;
+        color: #fff;
+        height: 50vh;
+        gap: 0;
+        width: 50%;
+    transition: 0.9s ease;
+        
+    }
+    .side-bar.active{
+        right: 0px;
+    }
+    .side-bar.act{
+        display: none;
+        background-color: #1a1a1a;
+    }
+    .side-bar .item{
+        text-decoration: none;
+        background-color: #111;
+        color: #fff;
+        display: block;
+        font-size: 15px;
+        line-height: 13px;
+        text-align: center;
+       padding: 14px 16px;
+        width: 100%;
+       cursor: pointer;
+       font-family: 'Roboto', sans-serif;
+    }
+    .wrapper{
+        width: 80%;
+        height: 60vh;
+        position: relative;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info{
+        width: 100%;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+    }
+    .book{
+        font-size: 17px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    select{
+        width: 80%;
+        font-size: 15px;
+    }
+    .overall{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .forbutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        top: 5px;
+    }
+    button{
+        width: 60%;
+        padding: 10px;
+        background-color: red;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+    }
+    .svg{
+        width: 20px;
+    
+    }
+    .flix{
+        color: darkgray;
+        font-size: 15px;
+        font-weight: 550;
+        line-height: 30px;
+    }
+    .svglast{
+        position: relative;
+        top: 0px;
+    }
+    .net{
+        position: relative;
+        top: 0px;
+    }
+    .head{
+        z-index: 999;
+        color: #fff;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        gap: 10px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+}
